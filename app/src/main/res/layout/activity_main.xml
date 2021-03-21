@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitialActivity">
+
+    <EditText
+        android:id="@+id/forward9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛9"
+        android:hint="前衛9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/back9"
+        app:layout_constraintTop_toBottomOf="@+id/forward8" />
+
+    <EditText
+        android:id="@+id/forward10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛10"
+        android:hint="前衛10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back10"
+        app:layout_constraintTop_toBottomOf="@+id/forward9" />
+
+    <EditText
+        android:id="@+id/back9"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛8"
+        android:hint="後衛9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back8" />
+
+    <EditText
+        android:id="@+id/back10"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛8"
+        android:hint="後衛10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back9" />
+
+    <View
+        android:id="@+id/menu"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="back's icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menu"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+    <ImageView
+        android:id="@+id/forwrd_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="forward's icon"
+        app:layout_constraintBottom_toBottomOf="@+id/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_icon"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <EditText
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="後衛の人数"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/load_button"
+        app:layout_constraintStart_toEndOf="@+id/back_icon"
+        app:layout_constraintTop_toTopOf="@+id/menu" />
+
+    <EditText
+        android:id="@+id/forward"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="前衛の人数"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/menu"
+        app:layout_constraintEnd_toStartOf="@+id/load_button"
+        app:layout_constraintStart_toEndOf="@+id/forwrd_icon"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <Button
+        android:id="@+id/load_button"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/material_on_surface_disabled"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_menu_rotate"
+        app:layout_constraintBottom_toBottomOf="@+id/menu"
+        app:layout_constraintEnd_toEndOf="@+id/menu"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/menu" />
+
+    <EditText
+        android:id="@+id/back1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛1"
+        android:hint="後衛1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
+
+    <EditText
+        android:id="@+id/back2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛2"
+        android:hint="後衛2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back1" />
+
+    <EditText
+        android:id="@+id/back3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛3"
+        android:hint="後衛3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back2" />
+
+    <EditText
+        android:id="@+id/back4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛4"
+        android:hint="後衛4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back3" />
+
+    <EditText
+        android:id="@+id/back5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛5"
+        android:hint="後衛5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back4" />
+
+    <EditText
+        android:id="@+id/back6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛6"
+        android:hint="後衛6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back5" />
+
+    <EditText
+        android:id="@+id/back7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛7"
+        android:hint="後衛7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back6" />
+
+    <EditText
+        android:id="@+id/back8"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="後衛8"
+        android:hint="後衛8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back7" />
+
+    <EditText
+        android:id="@+id/forward1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛1"
+        android:hint="前衛1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back1"
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
+
+    <EditText
+        android:id="@+id/forward2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛2"
+        android:hint="前衛2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back2"
+        app:layout_constraintTop_toBottomOf="@+id/forward1" />
+
+    <EditText
+        android:id="@+id/forward3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛3"
+        android:hint="前衛3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/back3"
+        app:layout_constraintTop_toBottomOf="@+id/forward2" />
+
+    <EditText
+        android:id="@+id/forward4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛4"
+        android:hint="前衛4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/back3"
+        app:layout_constraintTop_toBottomOf="@+id/forward3" />
+
+    <EditText
+        android:id="@+id/forward5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛5"
+        android:hint="前衛5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/back3"
+        app:layout_constraintTop_toBottomOf="@+id/forward4" />
+
+    <EditText
+        android:id="@+id/forward6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛6"
+        android:hint="前衛6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/back6"
+        app:layout_constraintTop_toBottomOf="@+id/forward5" />
+
+    <EditText
+        android:id="@+id/forward7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛7"
+        android:hint="前衛7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/back7"
+        app:layout_constraintTop_toBottomOf="@+id/forward6" />
+
+    <EditText
+        android:id="@+id/forward8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="前衛8"
+        android:hint="前衛8"
+        app:layout_constraintEnd_toEndOf="@+id/forward7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/back8"
+        app:layout_constraintTop_toBottomOf="@+id/forward7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
